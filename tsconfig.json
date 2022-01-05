@@ -2,11 +2,7 @@
   "compilerOptions": {
     "baseUrl": "src",
     "target": "es5",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
@@ -22,6 +18,9 @@
     "jsx": "react-jsx"
   },
   "include": [
-    "src"
-, "reportWebVitals.ts", "service-worker.ts", "serviceWorkerRegistration.ts"  ]
+    "src",
+    "reportWebVitals.ts",
+    "service-worker.ts",
+    "serviceWorkerRegistration.ts"
+  ]
 }
