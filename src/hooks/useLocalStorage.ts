@@ -9,7 +9,7 @@ const useLocalStorage = (key = '', initialValue = '') => {
       return initialValue;
     }
   });
-  const [error, setError] = useState('');
+  const [, setError] = useState('');
 
   const setLocalStorageState = (newState: (T: string) => void) => {
     try {
