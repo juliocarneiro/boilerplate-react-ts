@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Spin } from 'antd';
 
 const SpinStyle = styled.div`
   display: flex;
@@ -13,7 +12,7 @@ const SpinStyle = styled.div`
 function Spinner() {
   return (
     <SpinStyle>
-      <Spin size="large" />
+      <p>Loading...</p>
     </SpinStyle>
   );
 }

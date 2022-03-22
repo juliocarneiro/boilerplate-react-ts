@@ -1,4 +1,6 @@
 **/*.js
+.env.development
+.env.production
 node_modules
 build
 /src/reportWebVitals.ts

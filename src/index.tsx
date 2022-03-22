@@ -5,7 +5,6 @@ import App from './App';
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 import reportWebVitals from './reportWebVitals';
 
-import 'antd/dist/antd.css';
 import 'animate.css';
 
 ReactDOM.render(

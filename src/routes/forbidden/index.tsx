@@ -1,20 +1,16 @@
 import React from 'react';
 import { RouteComponentProps, withRouter } from 'react-router-dom';
-import { Result, Button } from 'antd';
 import ResultWrapper from '../style';
 
 const Forbidden = ({ history }: RouteComponentProps) => (
   <ResultWrapper>
-    <Result
-      status="403"
-      title="403"
-      subTitle="Desculpe, você não acesso a este recurso."
-      extra={
-        <Button type="primary" onClick={() => history.goBack()}>
-          Voltar
-        </Button>
-      }
-    />
+    <div>
+      <h1>403</h1>
+      <p>Desculpe, você não acesso a este recurso.</p>
+      <button type="button" onClick={() => history.goBack()}>
+        Voltar
+      </button>
+    </div>
   </ResultWrapper>
 );
 
