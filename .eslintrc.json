@@ -5,50 +5,39 @@
   },
   "extends": [
     "plugin:react/recommended",
-    "airbnb",
+    "standard-with-typescript",
+    "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
-    "plugin:react-hooks/recommended"
+    "react-app",
+    "prettier"
   ],
-  "parser": "@typescript-eslint/parser",
+  "overrides": [],
   "parserOptions": {
-    "ecmaFeatures": {
-      "jsx": true
-    },
-    "ecmaVersion": 12,
+    "ecmaVersion": "latest",
     "sourceType": "module"
   },
-  "plugins": ["react", "@typescript-eslint", "prettier", "react-hooks"],
+  "plugins": ["react", "@typescript-eslint"],
   "rules": {
-    "comma-dangle": [
+    "react/jsx-filename-extension": [
       "error",
-      {
-        "arrays": "always-multiline",
-        "objects": "always-multiline",
-        "imports": "always-multiline",
-        "exports": "always-multiline",
-        "functions": "never"
-      }
+      { "extensions": [".jsx", ".tsx"] }
     ],
-    "react/jsx-wrap-multilines": [
-      "error",
-      { "declaration": false, "assignment": false }
-    ],
-    "@typescript-eslint/explicit-module-boundary-types": "off",
-    "@typescript-eslint/no-use-before-define": ["error"],
-    "react-hooks/exhaustive-deps": "warn",
-    "react/jsx-filename-extension": [1, { "extensions": [".tsx", ".ts"] }],
-    "react/jsx-one-expression-per-line": "off",
-    "no-use-before-define": "off",
-    "import/preferer-default-export": "off",
     "import/extensions": [
       "error",
       "ignorePackages",
-      { "ts": "never", "tsx": "never" }
+      {
+        "js": "never",
+        "jsx": "never",
+        "ts": "never",
+        "tsx": "never"
+      }
     ]
   },
   "settings": {
     "import/resolver": {
-      "typescript": {}
+      "node": {
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      }
     }
   }
 }

@@ -1,8 +1,8 @@
-import React from 'react';
-import Routes from 'routes';
+import React from 'react'
+import styled from 'styled-components'
 
-function App() {
-  return <Routes />;
-}
+const H1 = styled.h1`
+  color: red;
+`
 
-export default App;
+export const App: React.FC = () => <H1>Hello React</H1>
