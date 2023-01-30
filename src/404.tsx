@@ -1,3 +1,4 @@
+import React from 'react'
 import styled from 'styled-components'
 
 const NotFoundWrapper = styled.div`
@@ -15,14 +16,16 @@ const NotFoundWrapper = styled.div`
   }
 `
 
-const NotFound = () => (
-  <NotFoundWrapper>
-    <p>
-      <b>404</b>
-      <br />
-      Página não encontrada.
-    </p>
-  </NotFoundWrapper>
-)
+const NotFound: React.FC = () => {
+  return (
+    <NotFoundWrapper>
+      <p>
+        <b>404</b>
+        <br />
+        Página não encontrada.
+      </p>
+    </NotFoundWrapper>
+  )
+}
 
 export default NotFound

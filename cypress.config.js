@@ -7,9 +7,11 @@ export default defineConfig({
   },
   component: {
     specPattern: 'src/**/*.cy.{js,jsx,ts,tsx}',
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     devServer(cypressConfig, devServerConfig) {
       return {
         port: 1234,
+        // eslint-disable-next-line @typescript-eslint/no-empty-function
         close: () => {}
       }
     }
