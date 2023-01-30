@@ -3,15 +3,9 @@
 /.pnp
 .pnp.js
 .dccache
-.swc
 
 # testing
 /coverage
-
-# next.js
-/.next/
-/out/
-.env
 
 # production
 /build
@@ -30,10 +24,3 @@ yarn-error.log*
 .env.development.local
 .env.test.local
 .env.production.local
-
-# sw stuff
-public/sw.js
-public/workbox-*.js
-
-# storybook
-storybook-static

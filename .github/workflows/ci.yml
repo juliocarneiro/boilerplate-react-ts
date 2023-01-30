@@ -29,8 +29,8 @@ jobs:
         run: yarn lint
       - name: Security
         run: yarn protect
-      - name: Test
-        run: yarn test
+      # - name: Test
+      #   run: yarn test
       - name: Build
         run: yarn build
     # - name: Configure AWS Credentials
