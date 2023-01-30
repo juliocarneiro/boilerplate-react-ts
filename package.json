@@ -53,5 +53,6 @@
       "yarn test",
       "yarn protect"
     ]
-  }
+  },
+  "type": "module"
 }
