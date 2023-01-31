@@ -30,7 +30,7 @@ jobs:
       - name: Security
         run: yarn protect
       - name: Test
-        uses: cypress-io/github-action@v5.x.xs
+        uses: cypress-io/github-action@v5.x.x
         env:
           # pass GitHub token to detect new build vs re-run build
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
